@@ -4,6 +4,10 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@NamedQueries(
+        @NamedQuery(    name = "find-publication-by-id",
+                        query = "select item from Publication as item where item.id =: id")
+)
 @Entity
 public class Publication implements Serializable {
 
@@ -34,6 +38,7 @@ public class Publication implements Serializable {
         this.createdAt = new Date();
     }
 
+    // getters
     public long getId() {
         return id;
     }
@@ -54,6 +59,7 @@ public class Publication implements Serializable {
         return author;
     }
 
+    //setters
     public void setTitle(String title) {
         this.title = title;
     }
