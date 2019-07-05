@@ -2,6 +2,8 @@ package server.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @NamedQueries(
         @NamedQuery(name = "wer",
@@ -23,8 +25,19 @@ public class User implements Serializable {
     @JoinColumn(nullable = false)
     private models.Credentials credentials;
 
-    protected User() {
+    @OneToMany( mappedBy = "author",
+                targetEntity = Publication.class,
+                cascade = {CascadeType.DETACH,
+                          CascadeType.MERGE,
+                          CascadeType.REFRESH,
+                          CascadeType.PERSIST})
+    private List<Publication> publications;
+
+    {
+        publications = new CopyOnWriteArrayList<>();
     }
+
+    protected User() {}
 
     public User(String name, String surname, models.Credentials credentials) {
         this.name = name;
@@ -65,4 +78,12 @@ public class User implements Serializable {
         this.surname = surname;
     }
 
+    public List<Publication> getPublications() {
+        return publications;
+    }
+
+    // также для remove и т.д.
+    public void addPublication(Publication publication) {
+        publications.add(publication);
+    }
 }
