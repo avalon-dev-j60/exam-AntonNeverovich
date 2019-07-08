@@ -2,6 +2,7 @@ package client.servlets;
 
 import server.services.PublicationService;
 
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +15,8 @@ import java.io.IOException;
 public class IndexServlet extends HttpServlet {
 
     private static final String JSP = "/WEB-INF/pages/publications.jsp";
+
+    @Inject
     PublicationService publicationService;
 
     @Override

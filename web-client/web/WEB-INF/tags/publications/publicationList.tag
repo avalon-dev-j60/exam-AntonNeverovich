@@ -1,11 +1,11 @@
-<%--<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
-<%@tag description="Страница со списком публикаций" pageEncoding="UTF-8" %>
+<%@ tag description="Страница со списком публикаций" pageEncoding="UTF-8" %>
 
-<%@attribute name="publications" required="true" %>
+<%@attribute name="publications" required="true" type="java.util.List<server.models.Publication>" %>
 
 <c:choose>
 
     <c:when test="${publications.isEmpty()}">
+
         <p>
             There is no publications!
         </p>
@@ -16,14 +16,19 @@
 
         <c:forEach items="${publications}" var="item">
 
-            <p>
-            <h3>
-                <a href="${pageContext.servletContext.contextPath}/publications?id=${item.id}">
-                        ${item.title}
-                </a>
-            </h3>
-            ${item.content.substring(0, 256)}...
-            </p>
+            <div>
+
+                <h3>
+                    <a href="${pageContext.servletContext.contextPath}/publications?id=${item.id}">
+                       ${item.title}
+                    </a>
+                </h3>
+
+                <p>
+                   ${item.content.substring(0, 256)}...
+                </p>
+
+            </div>
 
         </c:forEach>
 

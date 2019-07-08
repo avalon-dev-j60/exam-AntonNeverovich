@@ -1,8 +1,9 @@
-<%@tag description="Основная страница" pageEncoding="UTF-8" %>
-<%@ taglib prefix="common" tagdir="/WEB-INF/tags/common" %>
+<%@ attribute name="title" %>
+<%@tag description="Личный кабинет" pageEncoding="UTF-8" %>
+<%@ taglib prefix="auth" tagdir="/WEB-INF/tags/auth" %>
 
 <!-- Заголовок страницы -->
-<%@attribute name="title" required="true" %>
+<%@attribute name="layout" required="true" %>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +15,7 @@
 </head>
 <body>
 
-<common:header/>
+<auth:header/>
 
 <section class="three fourths centered padded justify">
 

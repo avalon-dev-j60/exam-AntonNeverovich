@@ -37,6 +37,10 @@ public class User implements Serializable {
         publications = new CopyOnWriteArrayList<>();
     }
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(nullable = false)
+    private Profile profile;
+
     protected User() {}
 
     public User(String name, String surname, models.Credentials credentials) {
