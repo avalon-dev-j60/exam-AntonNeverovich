@@ -5,10 +5,12 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/*
 @NamedQueries(
         @NamedQuery(name = "wer",
                     query = "select user from Users user where user.credentials.email =: email")
 )
+*/
 
 @Entity(name = "Users")
 public class User implements Serializable {
