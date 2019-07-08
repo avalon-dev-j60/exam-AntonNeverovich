@@ -27,7 +27,7 @@ public class User implements Serializable {
     @JoinColumn(nullable = false)
     private models.Credentials credentials;
 
-    /*
+    
     @OneToMany( mappedBy = "author",
                 targetEntity = Publication.class,
                 cascade = {CascadeType.DETACH,
@@ -39,7 +39,7 @@ public class User implements Serializable {
     {
         publications = new CopyOnWriteArrayList<>();
     }
-
+    /*
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(nullable = false)
     private Profile profile;
