@@ -2,7 +2,7 @@
 
 <header class="three fourths centered padded">
 
-    <a href="${pageContext.servletContext.contextPath}">
+    <a href="${pageContext.servletContext.contextPath}/index">
         HOME
     </a>
 
