@@ -1,4 +1,5 @@
 <%@tag description="Header" pageEncoding="UTF-8" %>
+<%@attribute name="user" required="true" type="models.User"%>
 
 <header class="three fourths centered padded">
 
@@ -10,7 +11,7 @@
 
         <a href="${pageContext.servletContext.contextPath}/profile"
            class="padded">
-            $USERNAME$
+            ${user.getName}
         </a>
 
         <a href="${pageContext.servletContext.contextPath}/login"

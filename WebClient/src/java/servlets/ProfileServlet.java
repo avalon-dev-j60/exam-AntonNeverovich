@@ -2,6 +2,7 @@ package servlets;
 
 import beans.AuthenticationService;
 import java.io.IOException;
+import javax.ejb.EJB;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,9 +15,11 @@ import services.ProfileService;
 public class ProfileServlet extends HttpServlet {
 
     @Inject
-    ProfileService profileService;
     AuthenticationService authenticationService;
 
+    @EJB
+    ProfileService profileService;
+    
     private static final String URL = "/WEB-INF/pages/profile.jsp";
 
     @Override

@@ -33,8 +33,5 @@
 
     </c:otherwise>
 
-
-
-
 </c:choose>
 

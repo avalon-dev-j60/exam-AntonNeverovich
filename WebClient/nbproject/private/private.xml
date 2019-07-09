@@ -3,7 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="exam-AntonNeverovich">
-            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/index.html</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/pages/index.jsp</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/nbproject/build-impl.xml</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/tags/auth/registration.tag</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/pages/registration.jsp</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/src/java/servlets/ProfileServlet.java</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/tags/auth/layout.tag</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/tags/publications/publicationsList.tag</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/web/WEB-INF/pages/profile.jsp</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/src/java/servlets/IndexServlet.java</file>
+            <file>file:/D:/Yandex.Disk/YandexDisk-antonever/YandexDisk/java/avalon/avalon-dev-j60/exam/WebClient/src/java/servlets/RegistrationServlet.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,12 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="auth" tagdir="/WEB-INF/tags/auth" %>
+<%@page contentType="text/html;charset=UTF-8" language="java"%>
+<%@taglib prefix="auth" tagdir="/WEB-INF/tags/auth"%>
+<%@taglib prefix="profile" tagdir="/WEB-INF/tags/profile/"%>
 
-<auth:layout layout="auth" title="Profile"/>
-
-<%--
 <auth:layout layout="auth" title="Profile" >
 
-    <auth:profile Profile="${profile}"/>
+    <profile:profile/>
 
 </auth:layout> 
---%>

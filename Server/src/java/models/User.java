@@ -35,6 +35,10 @@ public class User implements Serializable {
                           CascadeType.REFRESH,
                           CascadeType.PERSIST})
     private List<Publication> publications;
+    
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(nullable = false)
+    private models.Profile profile;
 
     {
         publications = new CopyOnWriteArrayList<>();
@@ -84,7 +88,7 @@ public class User implements Serializable {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-/*
+
     public List<Publication> getPublications() {
         return publications;
     }
@@ -93,6 +97,10 @@ public class User implements Serializable {
     public void addPublication(Publication publication) {
         publications.add(publication);
     }
+
+    public Profile getProfile() {
+        return profile;
+    }
     
-*/
+    
 }
